@@ -1,0 +1,156 @@
+/* ROOT VARIABLES */
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --magenta: hsl(300, 69%, 71%);
+}
+
+/* RESET CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY STYLES */
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    background-image: url(/images/bg-desktop.svg);
+    background-color: var(--violet);
+}
+
+/* MAIN STYLES */
+.main__container {
+    width: 90vw;
+}
+
+.logo__container {
+    margin: 1.8rem 2rem;
+}
+
+.container {
+    display: flex;
+    gap: 2rem;
+}
+
+.mockup {
+    width: 600px;
+    margin-left: 5rem;
+}
+
+.text__container {
+    color: #ffffff;
+    width: 80%;
+}
+
+h2 {
+    margin-top: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 1.1rem;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    margin-bottom: 1rem;
+}
+
+.btn { 
+    min-width: 170px;
+    height: 50px;
+    color: var(--magenta);
+    padding: 2px 6px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    font-weight: bold;
+    background: #ffffff;
+}
+
+.btn:hover {
+    background: var(--magenta);
+    color: #ffffff;
+}
+
+/* SOCIAL ICONS */
+.social__container { 
+    width: 60px;
+    display: flex;
+    margin-left: 64rem;
+}
+
+.logo { 
+    width: 38px;
+    margin-right: .4rem;
+    color: #fff;
+    border: 2px solid #000;
+    border-radius: 100%;
+    padding: 4px;
+}
+
+.logo:hover {
+    border-color: var(--magenta);
+    cursor: pointer;
+    transition: all .2s; 
+}
+
+
+/* ATTRIBUTION STYLES */
+.attribution { font-size: 11px; text-align: center; color: #fff; }
+.attribution a { color: hsl(228, 45%, 44%); color: #fff; }
+.attribution a:hover { color: #43087e; }
+
+/* MEDIA QUERIES */
+@media (max-width: 375px) {
+    .main__container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo__container {
+        margin: 2rem 1.2rem;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 290px;
+        margin: 0 1rem;
+    }
+
+    .mockup { 
+        width: 290px;
+        margin: 0 auto;
+    }
+
+    .text__container {
+        width: 100%;
+        text-align: center;
+        margin-left: 1.6rem;
+    }
+
+    h2 {
+        font-size: 29px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        width: 100%;
+    }
+
+    .social__container {
+        margin: 2rem 6rem;
+    }
+
+    .logo {
+        margin: 12px;
+    }
+}
